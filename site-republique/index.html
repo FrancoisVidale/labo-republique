@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Laboratoire de la République | La République au concret</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto Condensed', sans-serif; }
+        .bg-republique-blue { background-color: #002395; }
+        .text-republique-red { color: #ED2939; }
+        .border-republique-red { border-color: #ED2939; }
+        .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo_labo.png" alt="Logo Laboratoire de la République" class="h-16 w-auto">
+            </div>
+            <nav class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-wider">
+                <a href="#" class="hover:text-blue-800 transition">Nos travaux</a>
+                <a href="#agenda" class="hover:text-blue-800 transition">Nos évènements</a>
+                <a href="#" class="hover:text-blue-800 transition">Le Lab</a>
+                <a href="#" class="hover:text-blue-800 transition">Médias</a>
+                <a href="#" class="px-5 py-2 bg-republique-blue text-white rounded shadow-md hover:bg-blue-800 transition">Soutenir</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative border-b overflow-hidden bg-white">
+        <div class="flex flex-col md:flex-row min-h-[600px]">
+            <div class="w-full md:w-1/2 flex flex-col justify-center px-12 py-20 text-left bg-white">
+                <h1 class="text-6xl md:text-7xl mb-6 uppercase font-bold leading-none tracking-tighter">
+                    [cite_start]La République <br> <span class="text-republique-red italic">au concret</span> [cite: 3, 4]
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-10 font-light">
+                    [cite_start]Réflexion — Formation — Action citoyenne [cite: 5]
+                </p>
+                <div class="flex space-x-4">
+                    <button class="px-8 py-4 border-2 border-black font-bold uppercase tracking-widest text-xs hover:bg-black hover:text-white transition">En savoir</button>
+                    <button class="px-8 py-4 bg-republique-red text-white font-bold uppercase tracking-widest text-xs hover:bg-red-700 transition shadow-lg">Soutenir</button>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 relative bg-gray-200 overflow-hidden">
+                <img src="amphi.JPG" alt="Université d'été - Amphithéâtre" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute bottom-6 right-6 flex space-x-2">
+                    <span class="w-3 h-3 bg-white rounded-full"></span>
+                    <span class="w-3 h-3 bg-white/50 rounded-full"></span>
+                    <span class="w-3 h-3 bg-white/50 rounded-full"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agenda" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12 border-b-2 border-gray-200 pb-4">
+                [cite_start]<h2 class="text-4xl font-bold uppercase">Agenda</h2> [cite: 8]
+                <a href="#" class="text-republique-blue font-bold uppercase text-xs tracking-widest">Voir plus ></a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 border-t-4 border-republique-red shadow-sm hover-lift">
+                    [cite_start]<p class="text-republique-red font-bold text-sm mb-4">2 DÉCEMBRE 2025</p> [cite: 9]
+                    [cite_start]<h3 class="text-lg font-bold mb-4">"L'émancipation par le travail : une promesse républicaine à réinventer"</h3> [cite: 13]
+                    [cite_start]<p class="text-gray-500 text-sm italic">AFTEC Formation, Orléans</p> [cite: 14]
+                </div>
+                <div class="bg-white p-8 border-t-4 border-republique-blue shadow-sm hover-lift">
+                    [cite_start]<p class="text-republique-blue font-bold text-sm mb-4">9 DÉCEMBRE 2025</p> [cite: 10]
+                    [cite_start]<h3 class="text-lg font-bold mb-4">"Responsabilité de l'État et protection des milieux marins"</h3> [cite: 15]
+                    [cite_start]<p class="text-gray-500 text-sm italic">Centre Panthéon, Paris</p> [cite: 17]
+                </div>
+                <div class="bg-white p-8 border-t-4 border-gray-400 shadow-sm hover-lift">
+                    [cite_start]<p class="text-gray-400 font-bold text-sm mb-4">11 DÉCEMBRE 2025</p> [cite: 11]
+                    [cite_start]<h3 class="text-lg font-bold mb-4">Conversation éclairée avec Jean-Michel Blanquer</h3> [cite: 18]
+                    [cite_start]<p class="text-gray-500 text-sm italic">Maison de l'Amérique Latine, Paris</p> [cite: 19]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            [cite_start]<h2 class="text-4xl font-bold uppercase mb-16">Les 3 piliers du Lab'</h2> [cite: 33]
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-6">
+                    [cite_start]<h3 class="text-2xl font-bold mb-2 uppercase">Penser</h3> [cite: 34]
+                    [cite_start]<p class="text-gray-600 italic mb-4">La République d'aujourd'hui</p> [cite: 35]
+                    [cite_start]<p class="text-sm text-gray-500">Études, débats et grandes réflexions démocratiques.</p> [cite: 36, 38]
+                </div>
+                <div class="p-6 border-x border-gray-100">
+                    [cite_start]<h3 class="text-2xl font-bold mb-2 uppercase text-republique-red">Former</h3> [cite: 39]
+                    [cite_start]<p class="text-gray-600 italic mb-4">Et transmettre</p> [cite: 40]
+                    [cite_start]<p class="text-sm text-gray-500">Programmes pédagogiques et Académie de la République.</p> [cite: 41]
+                </div>
+                <div class="p-6">
+                    [cite_start]<h3 class="text-2xl font-bold mb-2 uppercase">Agir</h3> [cite: 43]
+                    [cite_start]<p class="text-gray-600 italic mb-4">Sur le terrain</p> [cite: 43]
+                    [cite_start]<p class="text-sm text-gray-500">Initiatives citoyennes et actions concrètes.</p> [cite: 45]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <img src="logo_labo.png" alt="Logo Laboratoire de la République" class="h-12 w-auto">
+                <p class="text-xs text-gray-400 mt-4 max-w-sm">
+                    [cite_start]Association de loi 1901 d'intérêt général à but non lucratif. [cite: 49]
+                </p>
+            </div>
+            <div class="flex space-x-6 text-xs font-bold tracking-widest uppercase">
+                [cite_start]<a href="#" class="hover:text-republique-red transition">Contact</a> [cite: 51]
+                [cite_start]<a href="#" class="hover:text-republique-red transition">Université d'été 2025</a> [cite: 50]
+                <a href="#" class="hover:text-republique-red transition">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
