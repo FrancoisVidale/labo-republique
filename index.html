@@ -12,6 +12,7 @@
         .text-republique-blue { color: #002395; }
         .text-republique-red { color: #ED2939; }
         .border-republique-blue { border-color: #002395; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -41,8 +42,8 @@
                     Réflexion — Formation — Action citoyenne
                 </p>
                 <div class="flex space-x-4">
-                    <button class="px-8 py-4 bg-white text-republique-blue font-bold uppercase tracking-widest text-xs hover:bg-gray-100 transition shadow-lg">En savoir +</button>
-                    <button class="px-8 py-4 bg-white text-republique-blue font-bold uppercase tracking-widest text-xs hover:bg-gray-100 transition shadow-lg">Soutenir</button>
+                    <button class="px-8 py-4 bg-white text-republique-blue font-bold uppercase tracking-widest text-xs hover:bg-gray-100 transition shadow-lg rounded">En savoir +</button>
+                    <button class="px-8 py-4 bg-white text-republique-blue font-bold uppercase tracking-widest text-xs hover:bg-gray-100 transition shadow-lg rounded">Soutenir</button>
                 </div>
             </div>
 
@@ -51,21 +52,15 @@
                     <img id="carousel-img" src="amphi.JPG" alt="Université d'été" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500">
                 </div>
                 <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-4">
-                    <button onclick="changeSlide(0)" class="nav-dot w-4 h-4 bg-white rounded-full shadow-md border-2 border-transparent hover:border-republique-blue"></button>
-                    <button onclick="changeSlide(1)" class="nav-dot w-4 h-4 bg-white/50 rounded-full shadow-md border-2 border-transparent hover:border-republique-blue"></button>
-                    <button onclick="changeSlide(2)" class="nav-dot w-4 h-4 bg-white/50 rounded-full shadow-md border-2 border-transparent hover:border-republique-blue"></button>
+                    <button onclick="manualSlide(0)" class="nav-dot w-4 h-4 bg-white rounded-full shadow-md border-2 border-transparent hover:border-republique-blue"></button>
+                    <button onclick="manualSlide(1)" class="nav-dot w-4 h-4 bg-white/50 rounded-full shadow-md border-2 border-transparent hover:border-republique-blue"></button>
+                    <button onclick="manualSlide(2)" class="nav-dot w-4 h-4 bg-white/50 rounded-full shadow-md border-2 border-transparent hover:border-republique-blue"></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold uppercase mb-16 text-republique-blue">Les 3 piliers du Lab'</h2>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold mb-2 uppercase">Penser</h3>
-                    <p class="text-gray-600 italic mb-4">La République d'aujourd'hui</p>
-                    <p class="text-sm text-gray-500">Études, débats et réflexions démocratiques.</p>
-
-
+    <section id="agenda" class="py-16 bg-white border-b">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-10">
+                <h2 class="text-4xl font-bold uppercase text-republique
